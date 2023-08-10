@@ -1,0 +1,121 @@
+/* APPEARANCE AND COLORS*/
+.orange_bg {
+    background: #F26101 !important;
+}
+
+/* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+.royal_blue_bg {
+    background: #405c97;
+    border-color: #405c97 !important;
+}
+
+.ligher_gray_bg {
+    background: rgb(248, 248, 248) !important;
+}
+
+
+/* ALIGN AND JUSTIFY */
+.centralize {
+    justify-content: center !important;
+}
+
+.align_center {
+    align-items: center !important;
+}
+
+.row {
+    justify-content: center !important;
+}
+
+
+
+
+/* TEXT AND FONTS */
+.custom_font {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important
+}
+
+.card-body p {
+    font-size: large !important;
+}
+
+
+/* EFFECTS */
+.orange_hover:hover {
+    border-color: #F26101 !important;
+    background-color: rgb(255, 255, 255) !important;
+    color: #F26101 !important;
+}
+
+.royal_blue_hover:hover {
+    color: #405c97 !important;
+    background-color: #ffffff !important;
+}
+
+
+/* COMPONENTS */
+.btn_custom {
+    width: 100px !important;
+    margin-bottom: 3px !important;
+}
+
+.nav-item {
+    display: flex !important;
+    align-items: start !important;
+    font-size: medium !important;
+}
+
+.login {
+    /*Forms*/
+    width: 55vw;
+    display: flex !important;
+    justify-content: center;
+    padding-top: 20vh;
+    height: 100vh !important;
+
+}
+
+.long_hor_card {
+    width: 100vh !important;
+}
+
+/* IMAGES */
+.logo {
+    width: 70px !important;
+}
+
+
+/* SIZING AND RESIZING */
+@media only screen and (min-width: 992px) {
+
+    /* Ajustar a navbar para telas menores */
+    .nav-item {
+        display: flex !important;
+        align-items: center !important;
+        font-size: medium !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    /* Ajustar os cards para telas menores */
+    .column {
+        flex-wrap: wrap !important;
+        min-width: 15vh !important;
+        max-width: 20vh !important;
+    }
+
+    .card-body p {
+        font-size: medium !important;
+    }
+
+    .card-body {
+        font-size: small !important;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .login {
+        width: 80vw;
+    }
+}
